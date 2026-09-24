@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANG! - Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="topnav">
+        <ul>
+            <li><a href="index.html#home">Web</a></li>
+            <li><a href="#turnaj-admin">Přihlášení hráči</a></li>
+            <li><a href="#nastaveni">Nastavení</a></li>
+            <li><a href="login.html" style="color: #ff8888;">Odhlásit se</a></li>
+        </ul>
+    </nav>
+    <main class="page-shell">
+        <section id="turnaj-admin">
+            <h1>Administrace Turnaje BANG!</h1>
+            <p>Správa přihlášených účastníků a kapacita turnaje.</p>
+
+            <div class="admin-table-container">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Jméno</th>
+                            <th>Email</th>
+                            <th>Datum přihlášení</th>
+                            <th>Akce</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#001</td>
+                            <td>Jan Novák</td>
+                            <td>jan.novak@example.cz</td>
+                            <td>24. 09. 2026</td>
+                            <td><button class="btn-delete">Smazat</button></td>
+                        </tr>
+                        <tr>
+                            <td>#002</td>
+                            <td>Petr Svoboda</td>
+                            <td>petr.svoboda@example.cz</td>
+                            <td>24. 09. 2026</td>
+                            <td><button class="btn-delete">Smazat</button></td>
+                        </tr>
+                        <tr>
+                            <td>#003</td>
+                            <td>Lucie Dvořáková</td>
+                            <td>lucie.dvorak@example.cz</td>
+                            <td>23. 09. 2026</td>
+                            <td><button class="btn-delete">Smazat</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <section id="nastaveni">
+            <h2>Nastavení Turnaje</h2>
+            <form class="signup-form" style="max-width: 100%;">
+                <label for="max-players">Maximální počet hráčů:</label>
+                <input type="number" id="max-players" name="max-players" value="16" min="4" max="64">
+
+                <label for="status">Stav registrace:</label>
+                <input type="text" id="status" name="status" value="Otevřeno">
+
+                <input type="submit" value="Uložit změny">
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 BANG! Admin Dashboard.</p>
+        </footer>
+    </main>
+</body>
+</html>
