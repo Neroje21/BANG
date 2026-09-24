@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="topnav">
+        <ul>
+            <li><a href="#home">Domov</a></li>
+            <li><a href="#pravidla-bang">Pravidla</a></li>
+            <li><a href="#postavy-bang">Postavy</a></li>
+            <li><a href="#turnaje-bang">Turnaje</a></li>
+        </ul>
+    </nav>
+    <main class="page-shell">
+        <section class="hero" id="home">
+            <h1>BANG!</h1>
+            <p>Vítejte v divokém západě. Připravte se na rychlou, nervydrtící přestřelku.</p>
+        </section>
+<section id="pravidla-bang">
+    <h1>Pravidla hry BANG!</h1>
+    <p>Karetní přestřelka z Divokého západu pro 4 až 7 hráčů.</p>
+
+    <h2>1. Cíl hry podle rolí</h2>
+    <ul>
+        <li><span class="role">Šerif:</span> Musí zlikvidovat všechny Bandity a Odpadlíka, aby ochránil město.</li>
+        <li><span class="role">Pomocník šerifa:</span> Pomáhá Šerifovi a chrání ho. Vyhrává, pokud vyhraje Šerif (i když sám zemře).</li>
+        <li><span class="role">Bandita:</span> Chce zabít Šerifa. Pokud je Šerif zabit, Bandité vyhrávají.</li>
+        <li><span class="role">Odpadlík:</span> Chce se stát novým Šerifem. Musí zůstat naživu jako úplně poslední (nejprve musí zemřít všichni ostatní, nakonec Šerif).</li>
+    </ul>
+
+    <h2>2. Příprava hry</h2>
+    <ol>
+        <li><strong>Rozdání rolí:</strong> Každý si tajně vylosuje kartu role. <strong>Pouze Šerif svou kartu ihned odhalí.</strong> Ostatní ji drží v tajnosti.</li>
+        <li><strong>Výběr postavy:</strong> Každý hráč dostane kartu postavy, kterou položí lícem nahoru. Karta určuje speciální schopnost a počet životů (nábojů). <em>Pozor: Šerif hraje s jedním životem navíc!</em></li>
+        <li><strong>Karty v ruce:</strong> Hráči si do začátku líznou tolik karet, kolik mají aktuálně životů.</li>
+    </ol>
+
+    <h2>3. Průběh tahu</h2>
+    <p>Hra probíhá po směru hodinových ručiček a začíná Šerif. Tah každého hráče má 3 fáze:</p>
+    <ol>
+        <li><strong>Líznutí karet:</strong> Hráč si vezme 2 vrchní karty z balíčku.</li>
+        <li><strong>Zahrání karet:</strong> Hráč smí zahrát libovolný počet karet, ale platí 3 přísná omezení:
+            <ul>
+                <li>Může zahrát pouze <strong>jednu</strong> kartu <span class="card">BANG!</span> za tah (pokud nemá zbraň Volcanic).</li>
+                <li>Může mít před sebou vyloženou pouze <strong>jednu</strong> kopii konkrétní karty (např. nelze mít dva barely).</li>
+                <li>Může mít vyloženou pouze <strong>jednu zbraň</strong>.</li>
+            </ul>
+        </li>
+        <li><strong>Odhození karet:</strong> Na konci tahu smí mít hráč v ruce jen tolik karet, kolik mu zbývá životů. Přebytečné odhodí na odkládací balíček.</li>
+    </ol>
+
+    <h2>4. Vzdálenost a zbraně</h2>
+    <p>Vzdálenost mezi hráči se rovná nejkratšímu počtu míst u stolu mezi nimi (sousedé jsou na vzdálenost 1). Na začátku hry máte pouze "Colt .45", který dostřelí na vzdálenost 1. Pro střelbu na vzdálenější hráče musíte vyložit kartu zbraně (s vyšším číslem dostřelu). Vzdálenost modifikují také karty jako <em>Mustang</em> nebo <em>Hledí (Appaloosa)</em>.</p>
+
+    <h2>5. Ztráta života a vyřazení</h2>
+    <p>Když na vás někdo zahraje <span class="card">BANG!</span>, musíte zahrát kartu <span class="card">Vedle!</span>, jinak ztrácíte jeden život. Pokud ztratíte poslední život a nemáte kartu <span class="card">Pivo</span> (která vás zachrání), jste vyřazeni ze hry. Odhalíte svou roli a odhodíte všechny své karty.</p>
+
+    <h2>6. Konec hry</h2>
+    <p>Hra okamžitě končí ve dvou případech:</p>
+    <ul>
+        <li><strong>Šerif je zabit:</strong> Pokud zbyl naživu pouze Odpadlík, vyhrává on. V jakémkoli jiném případě vyhrávají Bandité.</li>
+        <li><strong>Všichni Bandité a Odpadlík jsou mrtví:</strong> Šerif a jeho případní přeživší Pomocníci vyhrávají.</li>
+    </ul>
+</section>
+<section id="postavy-bang">
+    <h2>Postavy a jejich schopnosti</h2>
+    <p>Každá postava má specifickou schopnost a počáteční počet životů (symbolizovaný náboji na kartě).</p>
+
+    <ul>
+        <li>
+            <strong>Bart Cassidy (4 životy):</strong> 
+            Kdykoliv ztratí život, okamžitě si lízne jednu kartu z lízacího balíčku.
+        </li>
+        <li>
+            <strong>Black Jack (4 životy):</strong> 
+            Při lízání karet ukáže druhou líznutou kartu. Pokud je to srdce nebo káro (červená), lízne si ještě třetí kartu.
+        </li>
+        <li>
+            <strong>Calamity Janet (4 životy):</strong> 
+            Může používat karty <span class="card">BANG!</span> jako karty <span class="card">Vedle!</span> a naopak.
+        </li>
+        <li>
+            <strong>El Gringo (3 životy):</strong> 
+            Kdykoliv ztratí život kvůli zásahu od jiného hráče, náhodně si vytáhne jednu kartu z ruky tohoto hráče.
+        </li>
+        <li>
+            <strong>Jesse Jones (4 životy):</strong> 
+            Při lízání si může první kartu líznout z ruky kteréhokoliv jiného hráče (místo z balíčku). Druhou kartu si lízne z balíčku.
+        </li>
+        <li>
+            <strong>Jourdonnais (4 životy):</strong> 
+            Má v sobě zabudovaný „Barell“. Kdykoliv je na něj zahrán <span class="card">BANG!</span>, otočí vrchní kartu z balíčku — je-li to srdce, střelu vykryl.
+        </li>
+        <li>
+            <strong>Kit Carlson (4 životy):</strong> 
+            Při lízání se podívá na 3 vrchní karty balíčku. Dvě si vybere do ruky a jednu vrátí lícem dolů navrch balíčku.
+        </li>
+        <li>
+            <strong>Lucky Duke (4 životy):</strong> 
+            Kdykoliv si má „líznout“ na efekt karty (např. při použití Barellu, Dynamitu či Vězení), otočí 2 karty a vybere si tu, která mu více vyhovuje.
+        </li>
+        <li>
+            <strong>Paul Regret (3 životy):</strong> 
+            Všichni ostatní hráči ho vidí na vzdálenost o 1 větší (má v sobě zabudovanou kartu Mustang).
+        </li>
+        <li>
+            <strong>Pedro Ramirez (4 životy):</strong> 
+            Při lízání si může první kartu vzít z vrchu odkládacího balíčku (místo z lízacího).
+        </li>
+        <li>
+            <strong>Rose Doolan (4 životy):</strong> 
+            Vidí všechny ostatní hráče na vzdálenost o 1 kratší (má v sobě zabudovanou kartu Hledí / Appaloosa).
+        </li>
+        <li>
+            <strong>Sid Ketchum (4 životy):</strong> 
+            Může kdykoliv odhodit 2 karty z ruky, aby si obnovil 1 život.
+        </li>
+        <li>
+            <strong>Slab the Killer (4 životy):</strong> 
+            K odvrácení jeho karty <span class="card">BANG!</span> musí napadený hráč zahrát 2 karty <span class="card">Vedle!</span> místo jedné.
+        </li>
+        <li>
+            <strong>Suzy Lafayette (4 životy):</strong> 
+            Jakmile nemá v ruce vůbec žádnou kartu, okamžitě si lízne novou kartu z balíčku.
+        </li>
+        <li>
+            <strong>Vulture Sam (4 životy):</strong> 
+            Kdykoliv je jakýkoliv hráč vyřazen ze hry, Sam si vezme do ruky všechny karty z ruky i z před vyřazeného hráče.
+        </li>
+        <li>
+            <strong>Willy the Kid (4 životy):</strong> 
+            Může ve svém tahu zahrát libovolný počet karet <span class="card">BANG!</span>.
+        </li>
+    </ul>
+</section>
+<section class="signup" id="turnaje-bang">
+    <p class="section-kicker">Přihlašte se do turnaje</p>
+    <form class="signup-form">
+        <label for="name">Jméno:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <input type="submit" value="Přihlásit se">
+    </form>
+</section>
+<footer>
+    <p>&copy; 2026 BANG! All rights reserved.</p>
+</footer>
+    </main>
+</body>
+</html>
